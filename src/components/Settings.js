@@ -70,6 +70,7 @@ class SettingsForm extends React.Component {
               className="form-control"
               type="text"
               placeholder="URL of profile picture"
+              data-cy="UrlProfile"
               value={this.state.image}
               onChange={this.updateState('image')} />
           </fieldset>
@@ -79,6 +80,7 @@ class SettingsForm extends React.Component {
               className="form-control form-control-lg"
               type="text"
               placeholder="Username"
+              data-cy="Username"
               value={this.state.username}
               onChange={this.updateState('username')} />
           </fieldset>
@@ -88,6 +90,7 @@ class SettingsForm extends React.Component {
               className="form-control form-control-lg"
               rows="8"
               placeholder="Short bio about you"
+              data-cy="Bio"
               value={this.state.bio}
               onChange={this.updateState('bio')}>
             </textarea>
@@ -98,6 +101,7 @@ class SettingsForm extends React.Component {
               className="form-control form-control-lg"
               type="email"
               placeholder="Email"
+              data-cy="Email"
               value={this.state.email}
               onChange={this.updateState('email')} />
           </fieldset>
@@ -107,6 +111,7 @@ class SettingsForm extends React.Component {
               className="form-control form-control-lg"
               type="password"
               placeholder="New Password"
+              data-cy="Password"
               value={this.state.password}
               onChange={this.updateState('password')} />
           </fieldset>
@@ -156,6 +161,7 @@ class Settings extends React.Component {
 
               <button
                 className="btn btn-outline-danger"
+                data-cy="LogoutButton"
                 onClick={this.props.onClickLogout}>
                 Or click here to logout.
               </button>

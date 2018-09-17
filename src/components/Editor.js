@@ -107,6 +107,7 @@ class Editor extends React.Component {
                     <input
                       className="form-control form-control-lg"
                       type="text"
+                      data-cy='ArticleTitle'
                       placeholder="Article Title"
                       value={this.props.title}
                       onChange={this.changeTitle} />
@@ -116,6 +117,7 @@ class Editor extends React.Component {
                     <input
                       className="form-control"
                       type="text"
+                      data-cy='ArticleAbout'
                       placeholder="What's this article about?"
                       value={this.props.description}
                       onChange={this.changeDescription} />
@@ -125,6 +127,7 @@ class Editor extends React.Component {
                     <textarea
                       className="form-control"
                       rows="8"
+                      data-cy='ArticleContent'
                       placeholder="Write your article (in markdown)"
                       value={this.props.body}
                       onChange={this.changeBody}>
@@ -135,6 +138,7 @@ class Editor extends React.Component {
                     <input
                       className="form-control"
                       type="text"
+                      data-cy='ArticleTags'
                       placeholder="Enter tags"
                       value={this.props.tagInput}
                       onChange={this.changeTagInput}
